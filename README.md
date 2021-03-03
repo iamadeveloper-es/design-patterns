@@ -1,15 +1,5 @@
 # Design patterns: GoF
 
-Descripción e implementación de los patrones de diseños GoF
-
-## Instalación y ejecución
-
-* Clona el repo
-* instala las dependencias, ejecutando: ```npm install```
-* Ejecuta mediante el comando: ```npm run start```. Para ver la salida, abrir el navegador a la URL: http://localhost:3000
-
-* [Ejercicio](./src/exercise/exercise.html)
-
 ## Introducción
 
 * Fueron creados por la conocida Gang of Four (de ahí su nombre): Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides
@@ -61,7 +51,7 @@ Descripción e implementación de los patrones de diseños GoF
 * Promover el loose coupling, reduciendo la dependencia que la aplicación tiene contra clases concretas
 * Poder crear familias de objetos relacionados, sin tener que depender de clases concretas
 
-![Abstract Factory pattern](/src/patterns/assets/abstract-factory.png)
+![Abstract Factory pattern](/src/assets/abstract-factory.png)
 
 ---
 
@@ -79,7 +69,7 @@ Descripción e implementación de los patrones de diseños GoF
 * Esconde la representación interna del producto
 * Las implementaciones pueden ser intercambiadas, puesto que desde fuera solamente se ve la interface expuesta
 
-![Builder pattern](/src/patterns/assets/builder.gif)
+![Builder pattern](/src/assets/builder.gif)
 
 ---
 
@@ -97,7 +87,7 @@ Descripción e implementación de los patrones de diseños GoF
 * Promover el loose coupling, reduciendo la dependencia que la aplicación tiene contra clases concretas
 * Permitir a una clase diferir la instanciación de objetos a sus subclases
 
-![Factory Method pattern](/src/patterns/assets/factory-method.png)
+![Factory Method pattern](/src/assets/factory-method.png)
 
 ---
 
@@ -114,7 +104,7 @@ Descripción e implementación de los patrones de diseños GoF
 * Ocultar al cliente la dificultad de crear instancias complejas
 * Poder instanciar objetos cuando su tipo no es conocido
 
-![Prototype pattern](/src/patterns/assets/prototype.png)
+![Prototype pattern](/src/assets/prototype.png)
 
 ---
 
@@ -130,7 +120,7 @@ Descripción e implementación de los patrones de diseños GoF
 * Los singletons se mantiene en memoria, el uso excesivo puede provocar un consumo extremo de memoria
 * En sistemas multi-threading debemos asegurar que realmente se comportan como tal
 
-![Singleton pattern](/src/patterns/assets/singleton.png)
+![Singleton pattern](/src/assets/singleton.png)
 
 ---
 
@@ -145,9 +135,9 @@ Descripción e implementación de los patrones de diseños GoF
 * Convierte la interface de una clase en otra que el cliente espera.
 * Permite trabajar conjuntamente a clases que tienen interfaces incompatibles
 
-![Adapter pattern](/src/patterns/assets/adapter1.png)
+![Adapter pattern](/src/assets/adapter1.png)
 
-![Adapter pattern](/src/patterns/assets/adapter2.png)
+![Adapter pattern](/src/assets/adapter2.png)
 
 ---
 
@@ -166,7 +156,7 @@ Descripción e implementación de los patrones de diseños GoF
 * Principalmente cuando necesitamos independencia de implementaciones en clases similares Nos permite seleccionar en run-time la implementación que
   nos interesa
 
-![Bridge pattern](/src/patterns/assets/bridge.png)
+![Bridge pattern](/src/assets/bridge.png)
 
 ---
 
@@ -183,7 +173,7 @@ Descripción e implementación de los patrones de diseños GoF
 * Cuando se necesita agregar data a través de la jerarquía
 * Cuando se debe tratar los elementos compuestos y los individuales uniformemente
 
-![Composite pattern](/src/patterns/assets/composite.png)
+![Composite pattern](/src/assets/composite.png)
 
 ---
 
@@ -201,7 +191,7 @@ Descripción e implementación de los patrones de diseños GoF
 * Cuando se necesita agregar data a través de la jerarquía
 * Cuando se debe tratar los elementos compuestos y los individuales uniformemente
 
-![Decorator pattern](/src/patterns/assets/decorator.png)
+![Decorator pattern](/src/assets/decorator.png)
 
 ---
 
@@ -217,7 +207,7 @@ Descripción e implementación de los patrones de diseños GoF
 
 * Cuando necesitemos simplificar y unificar una interface grande o un conjunto de ellas
 
-![Facade pattern](/src/patterns/assets/facade.png)
+![Facade pattern](/src/assets/facade.png)
 
 ---
 
@@ -232,7 +222,7 @@ Descripción e implementación de los patrones de diseños GoF
 
 * Reutilizar objetos similares, guardándolos y creando de nuevos solamente cuando no se encuentra un objeto que matchee con las necesidades.
 
-![Flyweight pattern](/src/patterns/assets/flyweight.jpg)
+![Flyweight pattern](/src/assets/flyweight.jpg)
 
 ---
 
@@ -266,7 +256,7 @@ Descripción e implementación de los patrones de diseños GoF
 
 * Hace operaciones adicionales cuando se tiene que acceder a los objetos destino.
 
-![Proxy pattern](/src/patterns/assets/proxy.png)
+![Proxy pattern](/src/assets/proxy.png)
 
 ---
 
@@ -282,7 +272,7 @@ Descripción e implementación de los patrones de diseños GoF
 * Permite a un número de clases que intenten manejar la petición, sin tener en cuenta los distintos objetos que hay a lo largo de la cadena
 * Cuando un objeto maneja la petición, esta sigue el amino en la cadena
 
-![Chain of Responsibility pattern](/src/patterns/assets/chainofresponsibility.png)
+![Chain of Responsibility pattern](/src/assets/chainofresponsibility.png)
 
 ---
 
@@ -293,7 +283,7 @@ Descripción e implementación de los patrones de diseños GoF
 * Encapsula una solicitud de acción como un objeto, lo que nos permite parametrizar otros objetos con diferentes solicitudes
 * Intenta desacoplar la petición de una acción de su receptor.
 
-![Command pattern](/src/patterns/assets/command.gif)
+![Command pattern](/src/assets/command.gif)
 
 ---
 
@@ -311,7 +301,7 @@ Descripción e implementación de los patrones de diseños GoF
 * Aggregate: Suele ser la interface de una colección, que nos define los métodos que usará la clase iterator.
 * Concrete aggregate: Implementa la definición de *Aggregate* y devuelve una instancia de Concrete iterator.
 
-![Iterator pattern](/src/patterns/assets/iterator.jpg)
+![Iterator pattern](/src/assets/iterator.jpg)
 
 ---
 
@@ -322,7 +312,7 @@ Descripción e implementación de los patrones de diseños GoF
 * Nos permite abordar algoritmos o procesos que requiere evaluación de una gramática o expresiones
 * Se una, por ejemplo, en el parseo de SQL, de compiladores e interpretadores de código, procesadores de lenguaje natural, etc.
 
-![Interpreter pattern](/src/patterns/assets/interpreter.jpg)
+![Interpreter pattern](/src/assets/interpreter.jpg)
 
 ---
 
@@ -341,7 +331,7 @@ Descripción e implementación de los patrones de diseños GoF
 
 * Cuando necesitemos disminuir el acoplamiento que hay en la comunicación entre objetos
 
-![Mediator pattern](/src/patterns/assets/mediator.png)
+![Mediator pattern](/src/assets/mediator.png)
 
 ---
 
@@ -352,7 +342,7 @@ Descripción e implementación de los patrones de diseños GoF
 * Permite restaurar un estado previo de un objeto (undo operation).
 * Es conocido también como **snapshot pattern**.
 
-![Memento pattern](/src/patterns/assets/memento.jpg)
+![Memento pattern](/src/assets/memento.jpg)
 
 ---
 
@@ -375,7 +365,7 @@ Descripción e implementación de los patrones de diseños GoF
 * Observer: Entidad que define las operaciones que nos permitirán la notificación.
 * Concrete Observer: Concreción de la clase Observer.
 
-![Observer pattern](/src/patterns/assets/observer.png)
+![Observer pattern](/src/assets/observer.png)
 
 ---
 
@@ -390,7 +380,7 @@ Descripción e implementación de los patrones de diseños GoF
 
 * Separar una clase concreta para cada posible estado de un objeto.
 
-![State pattern](/src/patterns/assets/state.png)
+![State pattern](/src/assets/state.png)
 
 ---
 
@@ -402,7 +392,7 @@ Descripción e implementación de los patrones de diseños GoF
 * Podemos tener diferentes implementaciones de una misma solución.
 * Estas implementaciones son intercambiables sin interrumpir el workflow de la aplicación.
 
-![Strategy pattern](/src/patterns/assets/strategy.png)
+![Strategy pattern](/src/assets/strategy.png)
 
 ---
 
@@ -418,7 +408,7 @@ Descripción e implementación de los patrones de diseños GoF
 * Cuando tenemos un programa/algoritmo con pasos definidos
 * Y queremos no tener que duplicar código, mover implementaciones o aplicando antipatrones
 
-![Template Method pattern](/src/patterns/assets/template-method.png)
+![Template Method pattern](/src/assets/template-method.png)
 
 ---
 
@@ -438,10 +428,10 @@ Descripción e implementación de los patrones de diseños GoF
 * Concrete Visitable: Implementa la interface Visitable y define la operación de aceptación. El objeto visitor es pasado a este objeto a través de la
   operación de aceptación.
 
-![Visitor pattern](/src/patterns/assets/visitor.jpg)
+![Visitor pattern](/src/assets/visitor.jpg)
 
 ---
 
 # Diagrama de patrones
 
-![Patterns diagram](/src/patterns/assets/all.png)
+![Patterns diagram](/src/assets/all.png)
