@@ -1,4 +1,5 @@
 import '../scss/style.scss';
+import {CarBuilderDirector, FerrariCarBuilder, MercedesCarBuilder, BMWCarBuilder } from './patterns/creational-patterns/builder';
 import { Client, VictorianFactory, ModernFactory, ArtDecoFactory} from './patterns/creational-patterns/abstract-factory';
 import { UserFactory, UserType } from './patterns/creational-patterns/factory-method';
 
@@ -21,3 +22,19 @@ console.log(victorianChair.info());
 console.log(modernSofa.info());
 console.log(artDecoTable.info());
 
+//Builder
+const ferrari = new FerrariCarBuilder();
+const mercedes = new MercedesCarBuilder();
+const bmw = new BMWCarBuilder();
+
+const ferrariDirector = new CarBuilderDirector(ferrari);
+const mercedesDirector = new CarBuilderDirector(mercedes);
+const bmwDirector = new CarBuilderDirector(bmw);
+
+ferrariDirector.build();
+mercedesDirector.build();
+bmwDirector.build();
+
+console.log(ferrariDirector.getCar());
+console.log(mercedesDirector.getCar());
+console.log(bmwDirector.getCar());
