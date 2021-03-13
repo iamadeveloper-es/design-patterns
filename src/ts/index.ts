@@ -3,6 +3,7 @@ import {CarBuilderDirector, FerrariCarBuilder, MercedesCarBuilder, BMWCarBuilder
 import { Client, VictorianFactory, ModernFactory, ArtDecoFactory} from './patterns/creational-patterns/abstract-factory';
 import { UserFactory, UserType } from './patterns/creational-patterns/factory-method';
 import { PrototypeTest } from './patterns/creational-patterns/prototype';
+import { SingletonTest } from './patterns/creational-patterns/singleton';
 
 
 
@@ -42,3 +43,6 @@ console.log(bmwDirector.getCar());
 
 //Prototype
 const prototype = PrototypeTest.test()
+
+//Singleton
+const singleton = SingletonTest.test()
