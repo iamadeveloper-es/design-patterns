@@ -2,6 +2,7 @@ import '../scss/style.scss';
 import {CarBuilderDirector, FerrariCarBuilder, MercedesCarBuilder, BMWCarBuilder } from './patterns/creational-patterns/builder';
 import { Client, VictorianFactory, ModernFactory, ArtDecoFactory} from './patterns/creational-patterns/abstract-factory';
 import { UserFactory, UserType } from './patterns/creational-patterns/factory-method';
+import { PrototypeTest } from './patterns/creational-patterns/prototype';
 
 
 
@@ -38,3 +39,6 @@ bmwDirector.build();
 console.log(ferrariDirector.getCar());
 console.log(mercedesDirector.getCar());
 console.log(bmwDirector.getCar());
+
+//Prototype
+const prototype = PrototypeTest.test()
