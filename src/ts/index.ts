@@ -4,6 +4,7 @@ import { Client, VictorianFactory, ModernFactory, ArtDecoFactory} from './patter
 import { UserFactory, UserType } from './patterns/creational-patterns/factory-method';
 import { PrototypeTest } from './patterns/creational-patterns/prototype';
 import { SingletonTest } from './patterns/creational-patterns/singleton';
+import { LightningToMicroUSBAdapter, iPhone7, GooglePixel, MicroUSBToLightningAdapter } from './patterns/structural-patterns/adapter';
 
 
 
@@ -46,3 +47,17 @@ const prototype = PrototypeTest.test()
 
 //Singleton
 const singleton = SingletonTest.test()
+
+
+//STRUCTURAL PATTERNS
+
+//Adapter
+let googlePixel = new GooglePixel()
+let chargeAdaptor = new LightningToMicroUSBAdapter(googlePixel);
+
+chargeAdaptor.useMicroUSB()
+
+let iphone7 = new iPhone7();
+
+let chargeAdaptor2 = new MicroUSBToLightningAdapter(iphone7)
+chargeAdaptor2.useLightning();
