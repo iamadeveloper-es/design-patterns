@@ -13,6 +13,7 @@ import { FlyweightTest } from './patterns/structural-patterns/flyweight';
 import { ProxyTest } from './patterns/structural-patterns/proxy';
 import { ChainOfResponsibilityTest } from './patterns/behavioral-patterns/chain-of-responsibility';
 import { CommandTest } from './patterns/behavioral-patterns/command';
+import { InterpreterTest } from './patterns/behavioral-patterns/interpreter';
 
 
 
@@ -105,3 +106,6 @@ ProxyTest.test()
 
 //Command
 CommandTest.test();
+
+//Interpreter
+InterpreterTest.test()
