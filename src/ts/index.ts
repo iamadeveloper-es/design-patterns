@@ -12,6 +12,7 @@ import { BlurayPlayer, Amplifier, Lights, TV, PopcornMaker, HomeTheaterFacade } 
 import { FlyweightTest } from './patterns/structural-patterns/flyweight';
 import { ProxyTest } from './patterns/structural-patterns/proxy';
 import { ChainOfResponsibilityTest } from './patterns/behavioral-patterns/chain-of-responsibility';
+import { CommandTest } from './patterns/behavioral-patterns/command';
 
 
 
@@ -101,3 +102,6 @@ ProxyTest.test()
 
 //Chain of Responsability
 //ChainOfResponsibilityTest.test()
+
+//Command
+CommandTest.test();
