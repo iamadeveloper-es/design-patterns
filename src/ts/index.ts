@@ -11,6 +11,7 @@ import { SmartAirSuspension, RearFacingSeats, ModelS} from './patterns/structura
 import { BlurayPlayer, Amplifier, Lights, TV, PopcornMaker, HomeTheaterFacade } from './patterns/structural-patterns/facade';
 import { FlyweightTest } from './patterns/structural-patterns/flyweight';
 import { ProxyTest } from './patterns/structural-patterns/proxy';
+import { ChainOfResponsibilityTest } from './patterns/behavioral-patterns/chain-of-responsibility';
 
 
 
@@ -97,3 +98,6 @@ FlyweightTest.test()
 
 //Proxy
 ProxyTest.test()
+
+//Chain of Responsability
+//ChainOfResponsibilityTest.test()
