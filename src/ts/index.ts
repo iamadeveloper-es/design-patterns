@@ -14,6 +14,7 @@ import { ProxyTest } from './patterns/structural-patterns/proxy';
 import { ChainOfResponsibilityTest } from './patterns/behavioral-patterns/chain-of-responsibility';
 import { CommandTest } from './patterns/behavioral-patterns/command';
 import { InterpreterTest } from './patterns/behavioral-patterns/interpreter';
+import { IteratorTest } from './patterns/behavioral-patterns/iterator';
 
 
 
@@ -109,3 +110,6 @@ CommandTest.test();
 
 //Interpreter
 InterpreterTest.test()
+
+//Iterator
+IteratorTest.test();
