@@ -7,6 +7,7 @@ import { SingletonTest } from './patterns/creational-patterns/singleton';
 import { LightningToMicroUSBAdapter, iPhone7, GooglePixel, MicroUSBToLightningAdapter } from './patterns/structural-patterns/adapter';
 import { BridgeTest } from './patterns/structural-patterns/bridge';
 import { CompositeTest } from './patterns/structural-patterns/composite';
+import { SmartAirSuspension, RearFacingSeats, ModelS} from './patterns/structural-patterns/decorator';
 
 
 
@@ -69,3 +70,11 @@ BridgeTest.test()
 
 //Composite
 CompositeTest.test()
+
+//Decorator
+let myTesla = new ModelS();
+myTesla = new SmartAirSuspension(myTesla);
+myTesla = new RearFacingSeats(myTesla);
+
+console.log(myTesla.cost());
+console.log(myTesla.getDescription());
