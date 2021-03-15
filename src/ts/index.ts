@@ -19,6 +19,7 @@ import { MementoTest } from './patterns/behavioral-patterns/memento';
 import { VisitorTest } from './patterns/behavioral-patterns/visitor';
 import { StateTest } from './patterns/behavioral-patterns/state';
 import { TemplateMethodTest } from './patterns/behavioral-patterns/template-method';
+import { TemperatureDisplay, WeatherStation } from './patterns/behavioral-patterns/observer';
 //import { MediatorTest } from './patterns/behavioral-patterns/mediator';
 
 
@@ -133,3 +134,11 @@ StateTest.test();
 
 //template Method
 TemplateMethodTest.test()
+
+//Observer
+
+let weatherStation = new WeatherStation();
+
+let tempDisplay = new TemperatureDisplay(weatherStation);
+
+weatherStation.setTemperature(50);
