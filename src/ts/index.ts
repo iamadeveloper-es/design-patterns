@@ -6,6 +6,7 @@ import { PrototypeTest } from './patterns/creational-patterns/prototype';
 import { SingletonTest } from './patterns/creational-patterns/singleton';
 import { LightningToMicroUSBAdapter, iPhone7, GooglePixel, MicroUSBToLightningAdapter } from './patterns/structural-patterns/adapter';
 import { BridgeTest } from './patterns/structural-patterns/bridge';
+import { CompositeTest } from './patterns/structural-patterns/composite';
 
 
 
@@ -65,3 +66,6 @@ chargeAdaptor2.useLightning();
 
 //Bridge
 BridgeTest.test()
+
+//Composite
+CompositeTest.test()
