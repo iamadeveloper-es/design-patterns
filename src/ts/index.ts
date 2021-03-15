@@ -15,6 +15,7 @@ import { ChainOfResponsibilityTest } from './patterns/behavioral-patterns/chain-
 import { CommandTest } from './patterns/behavioral-patterns/command';
 import { InterpreterTest } from './patterns/behavioral-patterns/interpreter';
 import { IteratorTest } from './patterns/behavioral-patterns/iterator';
+import { MementoTest } from './patterns/behavioral-patterns/memento';
 //import { MediatorTest } from './patterns/behavioral-patterns/mediator';
 
 
@@ -117,3 +118,6 @@ IteratorTest.test();
 
 //Mediator
 //MediatorTest.test()
+
+//Memento
+MementoTest.test()
