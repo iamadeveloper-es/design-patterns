@@ -5,6 +5,7 @@ import { UserFactory, UserType } from './patterns/creational-patterns/factory-me
 import { PrototypeTest } from './patterns/creational-patterns/prototype';
 import { SingletonTest } from './patterns/creational-patterns/singleton';
 import { LightningToMicroUSBAdapter, iPhone7, GooglePixel, MicroUSBToLightningAdapter } from './patterns/structural-patterns/adapter';
+import { BridgeTest } from './patterns/structural-patterns/bridge';
 
 
 
@@ -61,3 +62,6 @@ let iphone7 = new iPhone7();
 
 let chargeAdaptor2 = new MicroUSBToLightningAdapter(iphone7)
 chargeAdaptor2.useLightning();
+
+//Bridge
+BridgeTest.test()
