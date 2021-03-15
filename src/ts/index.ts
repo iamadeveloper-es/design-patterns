@@ -20,6 +20,7 @@ import { VisitorTest } from './patterns/behavioral-patterns/visitor';
 import { StateTest } from './patterns/behavioral-patterns/state';
 import { TemplateMethodTest } from './patterns/behavioral-patterns/template-method';
 import { TemperatureDisplay, WeatherStation } from './patterns/behavioral-patterns/observer';
+import { StrategyTest } from './patterns/behavioral-patterns/strategy';
 //import { MediatorTest } from './patterns/behavioral-patterns/mediator';
 
 
@@ -136,9 +137,11 @@ StateTest.test();
 TemplateMethodTest.test()
 
 //Observer
-
 let weatherStation = new WeatherStation();
 
 let tempDisplay = new TemperatureDisplay(weatherStation);
 
 weatherStation.setTemperature(50);
+
+//Strategy
+StrategyTest.test()
