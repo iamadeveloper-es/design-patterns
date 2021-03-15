@@ -1,4 +1,4 @@
-interface IChatRoom {
+/* interface IChatRoom {
     sendMessage(message: string, userId: string);
 
     addUser(user: User);
@@ -81,3 +81,4 @@ export class MediatorTest {
         user2.send('Hey buddy', '1');
     }
 }
+ */

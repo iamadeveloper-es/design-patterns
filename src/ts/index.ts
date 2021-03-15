@@ -15,7 +15,7 @@ import { ChainOfResponsibilityTest } from './patterns/behavioral-patterns/chain-
 import { CommandTest } from './patterns/behavioral-patterns/command';
 import { InterpreterTest } from './patterns/behavioral-patterns/interpreter';
 import { IteratorTest } from './patterns/behavioral-patterns/iterator';
-import { MediatorTest } from './patterns/behavioral-patterns/mediator';
+//import { MediatorTest } from './patterns/behavioral-patterns/mediator';
 
 
 
@@ -116,4 +116,4 @@ InterpreterTest.test()
 IteratorTest.test();
 
 //Mediator
-MediatorTest.test()
+//MediatorTest.test()
