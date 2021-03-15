@@ -9,6 +9,8 @@ import { BridgeTest } from './patterns/structural-patterns/bridge';
 import { CompositeTest } from './patterns/structural-patterns/composite';
 import { SmartAirSuspension, RearFacingSeats, ModelS} from './patterns/structural-patterns/decorator';
 import { BlurayPlayer, Amplifier, Lights, TV, PopcornMaker, HomeTheaterFacade } from './patterns/structural-patterns/facade';
+import { FlyweightTest } from './patterns/structural-patterns/flyweight';
+import { ProxyTest } from './patterns/structural-patterns/proxy';
 
 
 
@@ -89,3 +91,9 @@ let popcornMaker = new PopcornMaker();
 
 let hometheater = new HomeTheaterFacade(amp, bluray, lights, tv, popcornMaker);
 hometheater.watchMovie();
+
+//FlyWeight
+FlyweightTest.test()
+
+//Proxy
+ProxyTest.test()
