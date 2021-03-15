@@ -17,6 +17,7 @@ import { InterpreterTest } from './patterns/behavioral-patterns/interpreter';
 import { IteratorTest } from './patterns/behavioral-patterns/iterator';
 import { MementoTest } from './patterns/behavioral-patterns/memento';
 import { VisitorTest } from './patterns/behavioral-patterns/visitor';
+import { StateTest } from './patterns/behavioral-patterns/state';
 //import { MediatorTest } from './patterns/behavioral-patterns/mediator';
 
 
@@ -125,3 +126,6 @@ MementoTest.test()
 
 //Visitor
 VisitorTest.test();
+
+//State
+StateTest.test();
