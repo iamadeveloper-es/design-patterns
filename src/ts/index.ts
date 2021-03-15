@@ -8,6 +8,7 @@ import { LightningToMicroUSBAdapter, iPhone7, GooglePixel, MicroUSBToLightningAd
 import { BridgeTest } from './patterns/structural-patterns/bridge';
 import { CompositeTest } from './patterns/structural-patterns/composite';
 import { SmartAirSuspension, RearFacingSeats, ModelS} from './patterns/structural-patterns/decorator';
+import { BlurayPlayer, Amplifier, Lights, TV, PopcornMaker, HomeTheaterFacade } from './patterns/structural-patterns/facade';
 
 
 
@@ -78,3 +79,13 @@ myTesla = new RearFacingSeats(myTesla);
 
 console.log(myTesla.cost());
 console.log(myTesla.getDescription());
+
+//Facade
+let bluray = new BlurayPlayer();
+let amp = new Amplifier();
+let lights = new Lights();
+let tv = new TV();
+let popcornMaker = new PopcornMaker();
+
+let hometheater = new HomeTheaterFacade(amp, bluray, lights, tv, popcornMaker);
+hometheater.watchMovie();
