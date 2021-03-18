@@ -24,6 +24,7 @@ class OrExpression implements Expression {
 class AndExpression implements Expression {
 
     constructor(private  expression1: Expression, private  expression2: Expression) {
+        
     }
 
     interpret(context: string): boolean {
